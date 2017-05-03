@@ -75,7 +75,7 @@ public class FlockMovement : MonoBehaviour {
                     vCenter += go.transform.position;
                     groupSize++;
 
-                    if(dist<0.5f)
+                    if(dist<1.0f)
                     {
                         vAvoid = vAvoid + (this.transform.position = go.transform.position);
                     }
@@ -96,6 +96,10 @@ public class FlockMovement : MonoBehaviour {
                 transform.rotation = Quaternion.Slerp(transform.rotation, 
                     Quaternion.LookRotation(direction), 
                     rotationSpeed * Time.deltaTime);
+           
         }
+        speed = 10.0f;
     }
+
+
 }
