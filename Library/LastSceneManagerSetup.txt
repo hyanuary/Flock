@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/contraints.unity
+- path: C:/Users/hyanuary/Documents/Spatial/Assets/spatial.unity
   isLoaded: 1
   isActive: 1
